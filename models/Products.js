@@ -1,10 +1,13 @@
 var mongoose = require('mongoose')
 
 var ProductSchema = new mongoose.Schema({
-  _id: String,
+  commodity: String,
+  rank: String,
+  upc: String,
   upc12: String,
+  bin: String,
   description: String,
-  price: Number
+  price: String
 })
 
 mongoose.model('Product', ProductSchema)
